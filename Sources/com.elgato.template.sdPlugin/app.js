@@ -16,14 +16,14 @@ $SD.on('connected', (jsonObj) => connected(jsonObj));
 
 function connected(jsn) {
     /** subscribe to the willAppear and other events */
-    $SD.on('com.elgato.template.action.willAppear', (jsonObj) => action.onWillAppear(jsonObj));
-    $SD.on('com.elgato.template.action.keyUp', (jsonObj) => action.onKeyUp(jsonObj));
-    $SD.on('com.elgato.template.action.sendToPlugin', (jsonObj) => action.onSendToPlugin(jsonObj));
-    $SD.on('com.elgato.template.action.didReceiveSettings', (jsonObj) => action.onDidReceiveSettings(jsonObj));
-    $SD.on('com.elgato.template.action.propertyInspectorDidAppear', (jsonObj) => {
+    $SD.on('com.ericraslich.sdpomodoro.action.willAppear', (jsonObj) => action.onWillAppear(jsonObj));
+    $SD.on('com.ericraslich.sdpomodoro.action.keyUp', (jsonObj) => action.onKeyUp(jsonObj));
+    $SD.on('com.ericraslich.sdpomodoro.action.sendToPlugin', (jsonObj) => action.onSendToPlugin(jsonObj));
+    $SD.on('com.ericraslich.sdpomodoro.action.didReceiveSettings', (jsonObj) => action.onDidReceiveSettings(jsonObj));
+    $SD.on('com.ericraslich.sdpomodoro.action.propertyInspectorDidAppear', (jsonObj) => {
         console.log('%c%s', 'color: white; background: black; font-size: 13px;', '[app.js]propertyInspectorDidAppear:');
     });
-    $SD.on('com.elgato.template.action.propertyInspectorDidDisappear', (jsonObj) => {
+    $SD.on('com.ericraslich.sdpomodoro.action.propertyInspectorDidDisappear', (jsonObj) => {
         console.log('%c%s', 'color: white; background: red; font-size: 13px;', '[app.js]propertyInspectorDidDisappear:');
     });
 };

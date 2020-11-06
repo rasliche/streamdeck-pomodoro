@@ -9,7 +9,7 @@
         }
       ], 
       "Tooltip": "This is an example tooltip", 
-      "UUID": "com.elgato.template.action"
+      "UUID": "com.ericraslich.sdpomodoro.action"
     }
   ], 
   "SDKVersion": 2,
